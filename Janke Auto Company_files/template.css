@@ -1,0 +1,446 @@
+/*/*
+-----------------------------------------------------------------------------------------
+CSS document: ImageCafe Template Styles
+Created: 05/26/2006
+Last Modified: 10/16/2006
+NOTE: Template styles included here cannot be changed by the customer
+-------------------------------------------------------------------------------------- */
+
+
+*{margin:0;padding:0;}  
+body {
+	width:100%;
+	height:100%;
+	background:#FFFFFF; 
+	margin-left:auto;
+	margin-right:auto;
+		
+}
+/*
+-----------------------------------------------------------------------------------------
+Global
+-------------------------------------------------------------------------------------- */
+
+div {position:relative;}
+#printwrap {position:static;}
+h4, h5 {margin:10px 15px;}
+ul, ol {
+	margin:15px;
+	padding:0 0 0 25px;
+}
+	ol {padding:0 0 0 30px;}
+.clearer {clear:both;}
+
+#printwrap {
+	float:left;
+	width:100%;
+}
+
+blockquote {margin:10px 10px 10px 40px;}
+
+/*
+-----------------------------------------------------------------------------------------
+General Layout Structure
+--------------------------------------------------------------------------------------*/
+#nav-top, #nav-left, #nav-right {
+	width:1000px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	/*overflow:hidden;*/
+	border:1px solid #000000;
+	z-index:10;
+}
+
+#accent-wrapper{
+	width:416px;
+	height:256px;
+	top:0px;
+	left:0px;
+	float:left;
+}
+.accent{
+	background: url(../images/featured-image.jpg) no-repeat top left;
+	float:left;
+	width:416px;
+	height:auto;
+	border-left:1px solid #000000;
+}
+ #dummy {
+	width:1000px;
+	height:auto;
+	margin-top:-256px;
+	z-index:-1;
+	float:left;
+	border:1px solid #000000;
+}
+
+ #headertop {
+	width:1000px;
+	height:197px;
+	float:left;
+}
+
+#headertop #titlebox {
+	position:relative;
+	bottom: 0;
+	z-index:999;		padding-top:150px;
+}
+ #headertop #website-title {
+	z-index:999;
+ 	float:right;
+	width:574px;
+	height:auto;
+	text-align:left;
+	
+}
+
+ #slogan_wrapper{
+	float:right;
+	width:584px;
+	height:58px;
+	border-top: 1px solid #FFFFFF;	
+	z-index:999;
+}
+ 
+* html #slogan_wrapper {
+	width:594px;
+}
+
+#slogan_wrapper #website-slogan {
+	padding-top:15px;
+	padding-left:15px;
+	padding-bottom:20px;
+	height:auto;
+	text-align:left;
+	word-wrap:break-word;
+	white-space:normal;
+	
+}
+
+
+/*------------------ nav-top ------------------*/
+#nav-top #navcontainer {
+	float:left;
+	width:1000px;
+	z-index:1000;
+}
+* html #nav-top #navcontainer {
+	margin-right:-20px;
+	width:1010px;
+}
+
+	#nav-top #content {
+	float:left;
+	width:1000px;
+	border:1px solid #000000;
+	}
+
+#nav-top #footer {
+	width:1000px;
+	padding:5px;
+	clear:both;
+	
+}
+* html #nav-top #dummy {
+margin-right:-12px;
+}
+
+/*------------------ nav-left ------------------*/
+
+#nav-left #navcontainer {
+	
+	float:left;
+	clear:right;
+	width:150px;
+	top:40px;
+	z-index:1000;
+	left:0px;
+}
+
+#nav-left #content {
+	float:left;	
+	width:1000px;
+	border:1px solid #000000;
+	}
+
+#nav-left  #footer {
+	width:970px;
+	padding:5px;
+	clear:left;
+	padding-top:40px;
+	padding-left:30px;
+}
+*html #nav-left  #footer {
+margin-top:40px;
+padding-top:0px;
+}
+* html #nav-left #dummy {
+margin-right:-8px;
+}
+
+
+/*------------------ nav-right ------------------*/
+#nav-right #content {
+	width:990px;
+	float:left;
+	padding-left:10px;
+	border:1px solid #000000;
+}
+#nav-right #navcontainer {
+	float:right;
+	clear:right;
+	top:40px;
+	width:150px;	
+	z-index:1000;
+	margin-right:20px;
+	
+}
+*html #nav-right #navcontainer{
+margin-right:0px;
+}
+
+#nav-right #content #footer {
+	width:970px;
+	clear:right;
+	padding-top:40px;
+	padding-right:5px;
+	padding-bottom:5px;
+	
+	
+}
+*html #nav-right #content #footer {
+margin-top:40px;
+padding-top:0px;
+	
+}
+* html #nav-right #dummy {
+margin-right:-3px;
+}
+
+* html #nav-right #slogan_wrapper {
+	width:590px;
+}
+
+
+/*
+-----------------------------------------------------------------------------------------
+Navigation Elements
+-------------------------------------------------------------------------------------- */
+/*------------------ nav-top ------------------*/	
+#nav-top #navcontainer div, #nav-top #navcontainer div h3 {
+	float:left;
+	display:block;
+	cursor:pointer;
+}
+	#nav-top #navcontainer div a:link, #nav-top #navcontainer div a:active, #nav-top #navcontainer div a:visited {
+		float:left;
+		border-right:1px solid #fff;
+		padding:10px 10px 10px 10px;
+		text-decoration:none;
+		white-space: nowrap;
+	}
+	#nav-top #navcontainer div a:hover {border-left:0;}
+		#nav-top #navcontainer div div.submenu, #nav-top #navcontainer div div.submenu h3 {
+			float:left;
+			display:block;
+		}
+		#nav-top #navcontainer div div.submenu {
+			position:absolute;
+			left:0px;
+			top:0px;
+			width:175px;
+			visibility:hidden;
+		}
+		*html #nav-top #navcontainer div div.submenu {
+			width:190px;
+		}
+			#nav-top #navcontainer div div.submenu div {display:block; top:-1px;}
+			#nav-top #navcontainer div div.submenu a:link, #nav-top #navcontainer div div.submenu a:active, #nav-top #navcontainer div div.submenu a:visited {
+				float:left;
+				/*---ie broswer width---*/
+				width:175px;
+				border:1px solid #fff;
+				padding:10px 10px 10px 10px;
+				text-decoration:none;
+				/*---Proper width for all other browsers---*/
+					voice-family: "\"}\"";
+					voice-family:inherit;
+					word-wrap:break-word;
+					white-space:normal;
+					
+			}
+
+			*html #nav-top #navcontainer div div.submenu a:link {
+				width:190px;
+			}
+			*html #nav-top #navcontainer div div.submenu a:active{
+				width:190px;
+			}
+			*html #nav-top #navcontainer div div.submenu a:visited {
+				width:190px;
+			}
+
+			#nav-top #navcontainer div div.submenu a:hover {text-decoration:none;}
+/*------------------ nav-left ------------------*/	
+#nav-left #navcontainer div, #nav-left #navcontainer div h3 {
+	float:left;
+	display:block;
+	cursor:pointer;
+	
+}
+	#nav-left #navcontainer div a:link, #nav-left #navcontainer div a:active, #nav-left #navcontainer div a:visited {
+		float:left;
+		/*---ie broswer width---*/
+		width:150px;
+		padding:10px 10px 10px 10px;
+		text-decoration:none;
+		border-bottom:1px solid #fff;
+		/*---Proper width for all other browsers---*/
+			voice-family: "\"}\"";
+			voice-family:inherit;
+			
+			word-wrap: break-word;
+	}
+	#nav-left #navcontainer div a:hover {border-left:0;}
+		#nav-left #navcontainer div div.submenu, #nav-left #navcontainer div div.submenu h3 {
+			float:left;
+			display:block;
+		}
+		#nav-left #navcontainer div div.submenu {
+			position:absolute;
+			left:100px;
+			top:0px;
+			width:180px;
+			visibility:hidden;
+		}
+			#nav-left #navcontainer div div.submenu div {display:block;}
+			#nav-left #navcontainer div div.submenu a:link, #nav-left #navcontainer div div.submenu a:active, #nav-left #navcontainer div div.submenu a:visited {
+				float:left;
+				width:180px;
+				border:1px solid #fff;
+				padding:10px 10px 10px 10px;
+				text-decoration:none;
+				word-wrap: break-word;
+			}
+			#nav-left #navcontainer div div.submenu a:hover {text-decoration:none;}
+/*------------------ nav-right ------------------*/	
+#nav-right #navcontainer div, #nav-right #navcontainer div h3 {
+	float:left;
+	display:block;
+	cursor:pointer;
+	
+}
+	#nav-right #navcontainer div a:link, #nav-right #navcontainer div a:active, #nav-right #navcontainer div a:visited {
+		float:left;
+		/*---ie broswer width---*/
+		width:150px;
+			padding:10px 10px 10px 10px;
+			text-decoration:none;
+			border-bottom:1px solid #fff;
+		/*---Proper width for all other browsers---*/
+			voice-family: "\"}\"";
+			voice-family:inherit;
+			word-wrap: break-word;
+			
+	}
+	#nav-right #navcontainer div a:hover {border-left:0;}
+		#nav-right #navcontainer div div.submenu, #nav-right #navcontainer div div.submenu h3 {
+			float:left;
+			display:block;
+		}
+		#nav-right #navcontainer div div.submenu {
+			position:absolute;
+			top:0px;
+			width:180px;
+			visibility:hidden;
+		}
+			#nav-right #navcontainer div div.submenu div {display:block;right:22px;}
+			#nav-right #navcontainer div div.submenu a:link, #nav-right #navcontainer div div.submenu a:active, #nav-right #navcontainer div div.submenu a:visited {
+				float: left;
+				border:1px solid #fff;
+				padding:10px 10px 10px 10px;
+				
+				
+				/*---Proper width for all other browsers---*/
+			voice-family: "\"}\"";
+			voice-family:inherit;
+			width:180px;
+			text-decoration:none;
+			word-wrap: break-word;
+			}
+			*html #nav-right #navcontainer div div.submenu div  {
+			right:0px;
+			}
+			
+			#nav-right #navcontainer div div.submenu a:hover {text-decoration:none;}
+
+/*
+-----------------------------------------------------------------------------------------
+Table Structures
+-------------------------------------------------------------------------------------- */
+
+/*------------------ nav-top ------------------*/	
+#nav-top #content-table {
+	width:900px;
+	float:left;	
+	margin-left:50px;
+	margin-top:20px;
+}
+*html #nav-top #content-table {
+		margin-left:25px;
+}
+	#nav-top #content-table-main{
+	width:100%;
+	}
+		#nav-top #content-table-main p {margin:25px 10px 15px 10px;}
+/*------------------ nav-left ------------------*/	
+#nav-left #content-table {
+	float:left;
+	width:750px;	
+	margin-left:60px;
+	margin-top:10px;
+}
+
+/* IE6 hack to display the content table properly*/
+* html #nav-left #content-table {
+	float:none;
+	margin-left:0px;
+}
+/* IE7 hack to display the content table properly*/
+*+html #nav-left #content-table {
+	float:none;
+}
+
+#nav-left #content-table-main {
+width:100%;
+
+}
+*html #nav-left #content-table-main {
+padding-left:40px;
+	}
+*+html #nav-left #content-table-main {
+padding-left:60px;
+	}
+#nav-left #content-table-main p {margin:25px 0px 15px 15px;}
+	
+
+/*------------------ nav-right ------------------*/	
+#nav-right #content-table {
+	float:left;
+	width:750px;
+	margin-top:10px;
+	
+}
+/* IE6 hack to display the content table properly*/
+* html #nav-right #content-table {
+	float:none;
+	margin-left:0px;
+}
+/* IE7 hack to display the content table properly*/
+*+html #nav-right #content-table {
+	float:none;
+}
+	#nav-right #content-table-main {width:100%;}
+		#nav-right #content-table-main p {margin:25px 20px 15px 15px;}
+

@@ -1,0 +1,15 @@
+*.primary {background-color: rgb(33, 0, 138)}
+*.secondary {background-color: rgb(33, 0, 138)}
+*.tertiary {background-color: rgb(33, 0, 138)}
+*.background {background-color: rgb(33, 0, 138)}
+h1#website-title {font-family: "trebuchet ms", tahoma, sans-serif; font-size: 36px; font-weight: bold; color: rgb(255, 255, 255); font-style: normal; text-decoration: none}
+h2#website-slogan {font-family: "trebuchet ms", tahoma, sans-serif; font-size: 18px; font-weight: bold; color: rgb(255, 255, 255); font-style: normal; text-decoration: none}
+*#content {font-family: "trebuchet ms", tahoma, sans-serif; font-size: 12px; font-weight: normal; color: rgb(0, 0, 0); font-style: normal; text-decoration: none}
+*#content a:link {font-family: "trebuchet ms", tahoma, sans-serif; font-size: 12px; font-weight: normal; color: rgb(207, 119, 69); font-style: normal; text-decoration: underline}
+*#content a:active {font-family: "trebuchet ms", tahoma, sans-serif; font-size: 12px; font-weight: normal; color: rgb(207, 119, 69); font-style: normal; text-decoration: underline}
+*#content a:visited {font-family: "trebuchet ms", tahoma, sans-serif; font-size: 12px; font-weight: normal; color: rgb(207, 119, 69); font-style: normal; text-decoration: underline}
+*#content a:hover {font-weight: normal; color: rgb(90, 129, 40); font-style: normal; text-decoration: underline}
+*#navcontainer div a h3 {font-family: "trebuchet ms", tahoma, sans-serif; font-size: 12px; font-weight: normal; color: rgb(0, 0, 0); font-style: normal; text-decoration: none}
+*#navcontainer div a:hover h3 {font-weight: normal; color: rgb(255, 255, 255); font-style: normal; text-decoration: none; background-color: rgb(83, 149, 0)}
+*#navcontainer div a:hover {font-weight: normal; color: rgb(255, 255, 255); font-style: normal; text-decoration: none; background-color: rgb(83, 149, 0)}
+*.accent {background: transparent url(./Fotolia_2180366_X.jpg) no-repeat top left}
